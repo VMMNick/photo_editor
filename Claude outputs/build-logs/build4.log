@@ -1,0 +1,139 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugResValues
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:mergeDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:javaPreCompileDebug
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:generateDebugAndroidTestResValues
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:generateDebugAndroidTestResources
+> Task :app:processDebugAndroidTestManifest
+> Task :app:javaPreCompileDebugAndroidTest
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAndroidTestResources
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugJniLibFolders
+> Task :app:checkDebugDuplicateClasses
+> Task :app:processDebugAndroidTestResources
+> Task :app:processDebugManifestForPackage
+> Task :app:mergeDebugNativeLibs
+> Task :app:mergeExtDexDebug
+> Task :app:mergeLibDexDebug
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so.
+
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:mergeDebugAndroidTestShaders
+> Task :app:compileDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:compressDebugAndroidTestAssets
+> Task :app:desugarDebugAndroidTestFileDependencies
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :app:mergeLibDexDebugAndroidTest
+> Task :app:mergeExtDexDebugAndroidTest
+> Task :app:processDebugResources
+> Task :app:compileDebugKotlin
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics
+> Task :app:processDebugJavaRes
+> Task :app:mergeProjectDexDebug
+> Task :app:compileDebugAndroidTestKotlin
+> Task :app:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :app:dexBuilderDebugAndroidTest
+> Task :app:mergeDebugAndroidTestGlobalSynthetics
+> Task :app:processDebugAndroidTestJavaRes
+> Task :app:mergeProjectDexDebugAndroidTest
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+
+> Task :app:connectedDebugAndroidTest
+Starting 84 tests on pe_test(AVD) - 17
+
+com.photoeditor.app.image.DetailTilesTest > largeRegionIsDownsampledToScreen[pe_test(AVD) - 17] [31mFAILED [0m
+	java.lang.AssertionError: expected:<2> but was:<4>
+	at org.junit.Assert.fail(Assert.java:89)
+
+com.photoeditor.app.image.ImageLoaderTest > appliesExifRotation[pe_test(AVD) - 17] [31mFAILED [0m
+	java.lang.ArithmeticException: divide by zero
+	at com.photoeditor.app.image.ImageLoader.sampleSize(ImageLoader.kt:123)
+
+com.photoeditor.app.image.ImageLoaderTest > downscalesToMaxSideKeepingAspect[pe_test(AVD) - 17] [31mFAILED [0m
+	java.lang.ArithmeticException: divide by zero
+	at com.photoeditor.app.image.ImageLoader.sampleSize(ImageLoader.kt:123)
+
+com.photoeditor.app.image.ImageLoaderTest > appliesExifMirror[pe_test(AVD) - 17] [31mFAILED [0m
+	java.lang.ArithmeticException: divide by zero
+	at com.photoeditor.app.image.ImageLoader.sampleSize(ImageLoader.kt:123)
+
+com.photoeditor.app.image.ImageLoaderTest > proprietaryRawFallsBackToEmbeddedPreview[pe_test(AVD) - 17] [31mFAILED [0m
+	java.lang.ArithmeticException: divide by zero
+	at com.photoeditor.app.image.ImageLoader.sampleSize(ImageLoader.kt:123)
+
+com.photoeditor.app.image.ImageLoaderTest > loadsJpegWithoutRotation[pe_test(AVD) - 17] [31mFAILED [0m
+	java.lang.ArithmeticException: divide by zero
+	at com.photoeditor.app.image.ImageLoader.sampleSize(ImageLoader.kt:123)
+
+pe_test(AVD) - 17 Tests 35/84 completed. (0 skipped) (6 failed)
+pe_test(AVD) - 17 Tests 36/84 completed. (0 skipped) (6 failed)
+pe_test(AVD) - 17 Tests 47/84 completed. (0 skipped) (6 failed)
+
+> Task :app:connectedDebugAndroidTest
+
+com.photoeditor.app.ui.SessionRestoreTest > subjectMaskMapIsPersisted[pe_test(AVD) - 17] [31mFAILED [0m
+	java.lang.IllegalArgumentException: List has more than one element.
+	at kotlin.collections.CollectionsKt___CollectionsKt.single(_Collections.kt:618)
+
+pe_test(AVD) - 17 Tests 79/84 completed. (0 skipped) (7 failed)
+pe_test(AVD) - 17 Tests 82/84 completed. (0 skipped) (7 failed)
+Finished 84 tests on pe_test(AVD) - 17
+
+> Task :app:connectedDebugAndroidTest
+Tests on pe_test(AVD) - 17 failed: There was 7 failure(s).
+
+> Task :app:connectedDebugAndroidTest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:connectedDebugAndroidTest'.
+> There were failing tests. See the report at: file:///C:/Users/Omen/Documents/Projects/photo_editor/app/build/reports/androidTests/connected/debug/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 3m 32s
+63 actionable tasks: 63 executed
+BUILD_EXIT=1

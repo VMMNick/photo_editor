@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Об'єктив-діафрагма + повзунок: 108dp, безпечна зона 66dp у центрі -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/icon_fg"
+        android:strokeWidth="4"
+        android:pathData="M54,32 A22,22 0 1,1 53.99,32 Z" />
+    <path
+        android:fillColor="@color/icon_fg"
+        android:pathData="M54,42 L64.4,48 L64.4,60 L54,66 L43.6,60 L43.6,48 Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/icon_fg"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M36,82 L72,82" />
+    <path
+        android:fillColor="@color/icon_fg"
+        android:pathData="M60,82 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0" />
+</vector>
